@@ -1,0 +1,34 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Hello World App
+# during dev, should point to your local machine
+host: localhost:10011
+# basePath prefixes all resource paths
+basePath: /v2
+#
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /hello:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: hello_controller_v2
+    get:
+      description: Devuelve un listado de feriados.
+      # used as the method name of the controller
+      operationId: getHello
+      produces:
+        - application/json
+      responses:
+        "201":
+          description: Success
+          schema:
+            type: string
