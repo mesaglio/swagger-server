@@ -31,4 +31,4 @@ paths:
         "201":
           description: Success
           schema:
-            type: string
+            $ref: "./api/swagger/v1/definitions_v1.yaml#/definitions/Hola"
