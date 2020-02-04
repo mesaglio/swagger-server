@@ -8,20 +8,21 @@
 
 ## Estructura de proyecto recomendada
 ```
-. proyect
+.
 ├───index.js
 ├───package.json
-├───configuration/
-│   ├───api_v1.js
-│   └───api_v2.js
-├───controllers/
-│   ├───bye_controller_v1.js
-│   ├───hello_controller_v1.js
-│   └───hello_controller_v2.js
-├───swagger/
-│   └───v1/
-|   │   ├───hello_v1.yaml
+├───api
+|   ├───configuration/
+|   │   ├───api_v1.js
+|   │   └───api_v2.js
+|   ├───controllers/
+|   │   ├───bye_controller_v1.js
+|   │   ├───hello_controller_v1.js
+|   │   └───hello_controller_v2.js
+|   ├───swagger/
+|   │   └───v1/
+|   |   │   ├───hello_v1.yaml
 │   │   └───bye_v1.yaml
-│   └───v2/
-│       └───hello_v2.yaml
+│   |   └───v2/
+│   |       └───hello_v2.yaml
 ```
